@@ -1,0 +1,305 @@
+/* ============================================
+   VICTORIAN NOVELS — Global Stylesheet
+   ============================================ */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400&display=swap');
+
+/* ============================================
+   CSS Variables — Victorian Palette
+   ============================================ */
+:root {
+  --vic-bg:         #faf9f7;
+  --vic-surface:    #f5f0e8;
+  --vic-border:     #e0d8cc;
+  --vic-border-md:  #d0c8bc;
+  --vic-ink:        #2c2416;
+  --vic-ink-md:     #4a3d2a;
+  --vic-ink-lt:     #6b5d4f;
+  --vic-ink-muted:  #9c8b7a;
+  --vic-gold:       #c4a35a;
+  --vic-gold-lt:    #e8d9b8;
+  --vic-white:      #ffffff;
+  --vic-danger:     #a32d2d;
+  --vic-danger-lt:  #fcebeb;
+  --vic-danger-bd:  #f09595;
+  --vic-success:    #2d6a4f;
+  --vic-success-lt: #eaf4ee;
+  --vic-success-bd: #95d0b0;
+
+  --vic-radius-sm:  6px;
+  --vic-radius-md:  10px;
+  --vic-radius-lg:  14px;
+}
+
+/* ============================================
+   Base
+   ============================================ */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background: var(--vic-bg);
+  color: var(--vic-ink-md);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: var(--vic-ink);
+}
+
+a {
+  color: var(--vic-ink-lt);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--vic-ink);
+}
+
+/* ============================================
+   Navbar
+   ============================================ */
+.navbar {
+  background: var(--vic-ink) !important;
+  border-bottom: 2px solid var(--vic-gold);
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--vic-gold) !important;
+  letter-spacing: 0.05em;
+}
+
+.nav-link {
+  color: var(--vic-gold-lt) !important;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.nav-link:hover {
+  color: var(--vic-gold) !important;
+}
+
+/* ============================================
+   Flash messages
+   ============================================ */
+.flash-success {
+  background: var(--vic-success-lt);
+  border: 1px solid var(--vic-success-bd);
+  color: var(--vic-success);
+  padding: 0.6rem 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.flash-error {
+  background: var(--vic-danger-lt);
+  border: 1px solid var(--vic-danger-bd);
+  color: var(--vic-danger);
+  padding: 0.6rem 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ============================================
+   Page hero / header
+   ============================================ */
+.vic-hero {
+  background: var(--vic-surface);
+  border-bottom: 1px solid var(--vic-border);
+  padding: 3rem 0;
+}
+
+.vic-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--vic-ink);
+}
+
+.vic-hero-subtitle {
+  font-style: italic;
+  color: var(--vic-ink-lt);
+}
+
+.vic-era-badge {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--vic-ink-muted);
+}
+
+.vic-era-badge::before,
+.vic-era-badge::after {
+  content: '——';
+  margin: 0 0.5rem;
+}
+
+/* ============================================
+   Decorative divider
+   ============================================ */
+.vic-divider {
+  width: 32px;
+  height: 1px;
+  background: var(--vic-border-md);
+  margin: 0.75rem 0;
+}
+
+.vic-divider-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--vic-gold);
+  font-size: 14px;
+  margin: 1.5rem 0;
+}
+
+.vic-divider-ornament::before,
+.vic-divider-ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--vic-border);
+}
+
+/* ============================================
+   Cards
+   ============================================ */
+.vic-card {
+  background: var(--vic-white);
+  border: 1px solid var(--vic-border);
+  border-radius: var(--vic-radius-lg);
+  padding: 1.25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vic-card:hover {
+  border-color: var(--vic-gold);
+  box-shadow: 0 2px 12px rgba(196, 163, 90, 0.1);
+}
+
+/* ============================================
+   Genre badge
+   ============================================ */
+.genre-badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  padding: 3px 9px;
+  border-radius: var(--vic-radius-sm);
+  background: var(--vic-surface);
+  color: var(--vic-ink-lt);
+  border: 1px solid var(--vic-gold-lt);
+}
+
+/* ============================================
+   Star ratings
+   ============================================ */
+.vic-stars {
+  color: var(--vic-gold);
+  font-size: 14px;
+}
+
+/* ============================================
+   Review card
+   ============================================ */
+.review-card {
+  background: var(--vic-white);
+  border: 1px solid var(--vic-border);
+  border-radius: var(--vic-radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--vic-gold-lt);
+}
+
+/* ============================================
+   Form card
+   ============================================ */
+.vic-form-card {
+  background: var(--vic-white);
+  border: 1px solid var(--vic-border);
+  border-radius: var(--vic-radius-lg);
+  padding: 2rem;
+}
+
+.vic-form-card .form-control,
+.vic-form-card .form-select {
+  border: 1px solid var(--vic-border-md);
+  background: var(--vic-bg);
+  color: var(--vic-ink);
+  font-size: 14px;
+}
+
+.vic-form-card .form-control:focus,
+.vic-form-card .form-select:focus {
+  border-color: var(--vic-gold);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.15);
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.btn-vic {
+  background: var(--vic-ink);
+  color: var(--vic-white);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--vic-radius-sm);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  transition: background 0.2s;
+}
+
+.btn-vic:hover {
+  background: var(--vic-ink-md);
+  color: var(--vic-white);
+}
+
+.btn-vic-outline {
+  background: transparent;
+  color: var(--vic-ink);
+  border: 1px solid var(--vic-ink);
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--vic-radius-sm);
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-vic-outline:hover {
+  background: var(--vic-ink);
+  color: var(--vic-white);
+}
+
+/* ============================================
+   Section title
+   ============================================ */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--vic-ink);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--vic-border);
+  margin-bottom: 1.25rem;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+footer {
+  background: var(--vic-ink);
+  border-top: 2px solid var(--vic-gold);
+  color: var(--vic-ink-muted);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 13px;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--vic-gold-lt);
+}

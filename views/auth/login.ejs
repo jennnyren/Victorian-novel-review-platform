@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In — Victorian Novels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+      body { background: #faf9f7; }
+      .form-card { background: #fff; border: 1px solid #e8e0d4; border-radius: 12px; padding: 2rem; }
+      .form-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 400; color: #2c2416; }
+      .form-subtitle { font-size: 13px; color: #6b5d4f; font-style: italic; }
+      .card-divider { width: 32px; height: 1px; background: #e0d4c0; margin: 0.75rem 0 1.25rem; }
+      .btn-victorian { background: #2c2416; color: #fff; border: none; width: 100%; padding: 0.65rem; border-radius: 6px; font-size: 14px; }
+      .btn-victorian:hover { background: #4a3d2a; color: #fff; }
+    </style>
+  </head>
+  <body>
+
+    <%- include('../partials/navbar') %>
+
+    <div class="container py-5" style="max-width: 440px;">
+      <div class="form-card">
+        <h2 class="form-title">Welcome back</h2>
+        <p class="form-subtitle">Sign in to leave reviews</p>
+        <div class="card-divider"></div>
+
+        <!-- Error flash -->
+        <% if (error && error.length > 0) { %>
+          <div class="alert alert-danger py-2 small"><%= error %></div>
+        <% } %>
+
+        <form action="/login" method="POST">
+          <div class="mb-3">
+            <label class="form-label small text-muted">Username</label>
+            <input type="text" name="username" class="form-control form-control-sm" required autofocus>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small text-muted">Password</label>
+            <input type="password" name="password" class="form-control form-control-sm" required>
+          </div>
+          <button type="submit" class="btn btn-victorian">Sign in</button>
+        </form>
+
+        <p class="text-center mt-3 small text-muted">
+          Don't have an account? <a href="/register" style="color: #6b5d4f;">Register here</a>
+        </p>
+      </div>
+    </div>
+
+    <%- include('../partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Oliver Twist",
+    "author": "Charles Dickens",
+    "year": 1837,
+    "genre": "Social Commentary",
+    "description": "A young orphan boy navigates the London criminal underworld after escaping a workhouse, exposing the harsh realities of poverty and injustice in Victorian England."
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "year": 1847,
+    "genre": "Gothic Romance",
+    "description": "An orphaned governess falls in love with her brooding employer Mr. Rochester, only to uncover dark secrets hidden within the walls of Thornfield Hall."
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "year": 1847,
+    "genre": "Gothic Fiction",
+    "description": "A tale of obsessive love and revenge spanning two generations, centered on the tempestuous relationship between Heathcliff and Catherine on the Yorkshire moors."
+  },
+  {
+    "title": "Vanity Fair",
+    "author": "William Makepeace Thackeray",
+    "year": 1848,
+    "genre": "Satire",
+    "description": "The contrasting lives of two women — the ambitious Becky Sharp and the gentle Amelia Sedley — as they navigate love, money, and social climbing in Regency England."
+  },
+  {
+    "title": "David Copperfield",
+    "author": "Charles Dickens",
+    "year": 1850,
+    "genre": "Bildungsroman",
+    "description": "The semi-autobiographical story of a young man's journey from a troubled childhood through hardship and heartbreak to eventual success and self-discovery."
+  },
+  {
+    "title": "Bleak House",
+    "author": "Charles Dickens",
+    "year": 1853,
+    "genre": "Social Commentary",
+    "description": "A sweeping critique of the British legal system told through the intertwined lives of characters caught in the endless lawsuit of Jarndyce and Jarndyce."
+  },
+  {
+    "title": "North and South",
+    "author": "Elizabeth Gaskell",
+    "year": 1855,
+    "genre": "Social Novel",
+    "description": "A young woman from the rural south of England is uprooted to an industrial northern town, where she confronts class conflict, labor disputes, and unexpected love."
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "year": 1859,
+    "genre": "Historical Fiction",
+    "description": "Set against the backdrop of the French Revolution, a story of love, sacrifice, and resurrection involving characters in London and Paris."
+  },
+  {
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "year": 1861,
+    "genre": "Bildungsroman",
+    "description": "An orphan named Pip receives a mysterious fortune and pursues his dream of becoming a gentleman, only to learn hard truths about wealth, loyalty, and identity."
+  },
+  {
+    "title": "Middlemarch",
+    "author": "George Eliot",
+    "year": 1871,
+    "genre": "Realist Fiction",
+    "description": "A richly detailed portrait of life in a fictional English Midlands town, following multiple characters as they navigate marriage, ambition, politics, and moral choices."
+  },
+  {
+    "title": "The Strange Case of Dr Jekyll and Mr Hyde",
+    "author": "Robert Louis Stevenson",
+    "year": 1886,
+    "genre": "Gothic Horror",
+    "description": "A respected London doctor creates a potion that unleashes his dark alter ego, exploring the duality of human nature and the dangers of unchecked ambition."
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "year": 1890,
+    "genre": "Philosophical Fiction",
+    "description": "A beautiful young man sells his soul so that his portrait ages in his place, leading him down a path of moral corruption and eventual destruction."
+  },
+  {
+    "title": "Tess of the d'Urbervilles",
+    "author": "Thomas Hardy",
+    "year": 1891,
+    "genre": "Tragedy",
+    "description": "A young peasant woman's life is destroyed by the rigid moral codes of Victorian society after she is seduced and later seeks to reclaim her dignity."
+  },
+  {
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "year": 1892,
+    "genre": "Mystery",
+    "description": "A collection of twelve stories featuring the legendary detective Sherlock Holmes and his loyal companion Dr. Watson solving baffling crimes in Victorian London."
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "year": 1897,
+    "genre": "Gothic Horror",
+    "description": "Told through journals and letters, a Transylvanian vampire travels to England to spread the undead curse, and a determined group of friends band together to stop him."
+  }
+]
